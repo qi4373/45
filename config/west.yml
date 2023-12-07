@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    # zmk official
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: qi4373
+      url-base: https://github.com/qi4373
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      # remote: qi4373
+      # revision: encoder-fix
+      import: app/west.yml
+  self:
+    path: config
